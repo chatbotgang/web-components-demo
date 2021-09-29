@@ -27,7 +27,7 @@
   "eslintConfig": {
     "root": true,
     "extends": [
-      "@ionic/eslint-config/recommended",
+      "@ionic/eslint-config",
       "plugin:prettier/recommended"
     ],
     "plugins": [
