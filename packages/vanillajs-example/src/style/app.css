@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin-top: 60px;
+  text-align: center;
+  font-size: 16px;
+  font-family: -apple-system, "PingFangTC-Regular", "Noto Sans", Arial,
+    "Source Han Sans TC", sans-serif;
+}
+
+.loading-container {
+  margin-bottom: 10px;
+  min-height: 40px;
+}

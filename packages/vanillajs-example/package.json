@@ -1,0 +1,66 @@
+{
+  "name": "@web-components-demo/vanillajs-example",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "start": "webpack serve",
+    "build": "NODE_ENV=production webpack --profile --color"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.8",
+    "@babel/preset-env": "^7.13.9",
+    "@types/babel__core": "^7",
+    "@types/babel__preset-env": "^7",
+    "@types/eslint": "^7",
+    "@types/mini-css-extract-plugin": "^1",
+    "@types/optimize-css-assets-webpack-plugin": "^5",
+    "@types/terser-webpack-plugin": "^5",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^3.0.0",
+    "eslint": "^7.21.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-html": "^6.1.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.3.1",
+    "eslint-plugin-standard": "^5.0.0",
+    "html-inline-css-webpack-plugin": "^1.10.1",
+    "html-webpack-plugin": "^5.2.0",
+    "mini-css-extract-plugin": "^1.3.9",
+    "optimize-css-assets-webpack-plugin": "^5.0.4",
+    "postcss-loader": "^5.0.0",
+    "postcss-preset-env": "^6.7.0",
+    "terser-webpack-plugin": "^5.1.1",
+    "webpack": "^5.24.3",
+    "webpack-cli": "^4.5.0"
+  },
+  "dependencies": {
+    "reset-css": "^5.0.1"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
+  "eslintConfig": {
+    "root": true,
+    "extends": "standard",
+    "plugins": [
+      "html"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 2020,
+      "sourceType": "module"
+    },
+    "env": {
+      "es6": true,
+      "commonjs": true,
+      "browser": true,
+      "node": true
+    },
+    "ignorePatterns": [
+      "node_modules",
+      "dist/*.js"
+    ]
+  }
+}
